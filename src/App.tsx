@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Bugsnag from '@bugsnag/js'
+
 function App() {
   return (
     <div className="App">
@@ -21,6 +23,7 @@ function App() {
       </header>
     </div>
   );
+  Bugsnag.notify(new Error('Test error'))
 }
 
 export default App;
