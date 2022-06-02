@@ -23,7 +23,6 @@ function App() {
       </header>
     </div>
   );
-  Bugsnag.notify(new Error('Test error'))
 }
 
 export default App;
